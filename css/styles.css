@@ -291,8 +291,17 @@ ul, ol {
   z-index: 1001;
 }
 
-.nav__logo-icon {
-  font-size: 28px;
+.nav__logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 22%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.nav__logo--footer .nav__logo-img {
+  width: 40px;
+  height: 40px;
 }
 
 .nav__links {
@@ -761,10 +770,24 @@ ul, ol {
   text-align: center;
 }
 
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__brand .nav__logo {
+  justify-content: center;
+  width: fit-content;
+}
+
 .footer__tagline {
   font-size: 14px;
   color: var(--color-text-muted);
   margin-top: 8px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .footer__links {

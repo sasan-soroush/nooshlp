@@ -13,18 +13,19 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Noosh — Your Kitchen, Simplified">
   <meta property="og:description" content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion.">
-  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:image" content="images/icon.png">
   <meta property="og:url" content="https://noosh.app">
   <meta property="og:site_name" content="Noosh">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Noosh — Your Kitchen, Simplified">
   <meta name="twitter:description" content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion.">
-  <meta name="twitter:image" content="images/og-image.png">
+  <meta name="twitter:image" content="images/icon.png">
 
   <link rel="canonical" href="https://noosh.app">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="any">
+  <link rel="apple-touch-icon" href="images/icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +52,8 @@
       "@type": "AggregateRating",
       "ratingValue": "4.8",
       "ratingCount": "500"
-    }
+    },
+    "image": "https://noosh.app/images/icon.png"
   }
   </script>
 </head>
@@ -61,7 +63,7 @@
   <header class="nav" id="nav">
     <div class="nav__container">
       <a href="/" class="nav__logo" aria-label="Noosh home">
-        <span class="nav__logo-icon">🍳</span>
+        <img src="images/icon.png" alt="" class="nav__logo-img" width="36" height="36" decoding="async">
         <span class="nav__logo-text">noosh</span>
       </a>
 
@@ -314,8 +316,8 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__brand">
-        <a href="/" class="nav__logo" aria-label="Noosh home">
-          <span class="nav__logo-icon">🍳</span>
+        <a href="/" class="nav__logo nav__logo--footer" aria-label="Noosh home">
+          <img src="images/icon.png" alt="" class="nav__logo-img" width="40" height="40" decoding="async">
           <span class="nav__logo-text">noosh</span>
         </a>
         <p class="footer__tagline">Cook smarter every day.</p>
