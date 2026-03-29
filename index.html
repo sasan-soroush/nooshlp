@@ -1,206 +1,324 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noosh — Recipe Manager, Digital Cookbook & Pantry Tracker</title>
-  <meta name="description" content="Noosh is the all-in-one recipe manager, digital cookbook, and pantry tracker. Save recipes from anywhere, track your pantry, generate meals with AI, and cook smarter every day.">
-  <meta name="keywords" content="recipe manager, digital cookbook, pantry tracker, meal planning, AI recipe generator, grocery list, cooking app, recipe organizer, recipe import">
-  <meta name="author" content="Noosh">
-  <meta name="theme-color" content="#1a1a2e">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noosh — Recipe Manager, Digital Cookbook & Pantry Tracker</title>
+    <meta
+      name="description"
+      content="Noosh is the all-in-one recipe manager, digital cookbook, and pantry tracker. Save recipes from anywhere, track your pantry, generate meals with AI, and cook smarter every day."
+    />
+    <meta
+      name="keywords"
+      content="recipe manager, digital cookbook, pantry tracker, meal planning, AI recipe generator, grocery list, cooking app, recipe organizer, recipe import"
+    />
+    <meta name="author" content="Noosh" />
+    <meta name="theme-color" content="#1a1a2e" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Noosh — Your Kitchen, Simplified">
-  <meta property="og:description" content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion.">
-  <meta property="og:image" content="images/icon.png">
-  <meta property="og:url" content="https://noosh.app">
-  <meta property="og:site_name" content="Noosh">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Noosh — Your Kitchen, Simplified" />
+    <meta
+      property="og:description"
+      content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion."
+    />
+    <meta property="og:image" content="images/icon.png" />
+    <meta property="og:url" content="https://noosh.app" />
+    <meta property="og:site_name" content="Noosh" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Noosh — Your Kitchen, Simplified">
-  <meta name="twitter:description" content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion.">
-  <meta name="twitter:image" content="images/icon.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Noosh — Your Kitchen, Simplified" />
+    <meta
+      name="twitter:description"
+      content="Save recipes from anywhere, track your pantry, generate meals with AI. The all-in-one cooking companion."
+    />
+    <meta name="twitter:image" content="images/icon.png" />
 
-  <link rel="canonical" href="https://noosh.app">
-  <link rel="icon" href="images/icon.png" type="image/png" sizes="any">
-  <link rel="apple-touch-icon" href="images/icon.png">
+    <link rel="canonical" href="https://noosh.app" />
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="any" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Noosh",
-    "operatingSystem": "iOS",
-    "applicationCategory": "LifestyleApplication",
-    "description": "The all-in-one recipe manager, digital cookbook, and pantry tracker designed to make cooking easier.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "500"
-    },
-    "image": "https://noosh.app/images/icon.png"
-  }
-  </script>
-</head>
-<body>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Noosh",
+        "operatingSystem": "iOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "The all-in-one recipe manager, digital cookbook, and pantry tracker designed to make cooking easier.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "500"
+        },
+        "image": "https://noosh.app/images/icon.png"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header class="nav" id="nav">
+      <div class="nav__container">
+        <a href="/" class="nav__logo" aria-label="Noosh home">
+          <img
+            src="images/icon.png"
+            alt=""
+            class="nav__logo-img"
+            width="36"
+            height="36"
+            decoding="async"
+          />
+          <span class="nav__logo-text">noosh</span>
+        </a>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="nav" id="nav">
-    <div class="nav__container">
-      <a href="/" class="nav__logo" aria-label="Noosh home">
-        <img src="images/icon.png" alt="" class="nav__logo-img" width="36" height="36" decoding="async">
-        <span class="nav__logo-text">noosh</span>
-      </a>
+        <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+          <a href="#features" class="nav__link">Features</a>
+          <a href="#how-it-works" class="nav__link">How It Works</a>
+          <a href="#download" class="nav__link">Download</a>
+        </nav>
 
-      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
-        <a href="#features" class="nav__link">Features</a>
-        <a href="#how-it-works" class="nav__link">How It Works</a>
-        <a href="#download" class="nav__link">Download</a>
-      </nav>
+        <a href="#download" class="nav__cta btn btn--outline btn--pill"
+          >Download App</a
+        >
 
-      <a href="#download" class="nav__cta btn btn--outline btn--pill">Download App</a>
-
-      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
-      <div class="hero__bg-accent" aria-hidden="true"></div>
-      <svg class="hero__wave" aria-hidden="true" viewBox="0 0 1440 200" preserveAspectRatio="none">
-        <path d="M0,160 C320,220 620,80 960,140 C1200,180 1380,100 1440,120 L1440,200 L0,200 Z" fill="var(--color-accent-light)"/>
-      </svg>
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span class="hero__title-line">YOUR KITCHEN,</span>
-            <span class="hero__title-line hero__title-italic">SIMPLIFIED</span>
-          </h1>
-          <p class="hero__subtitle">
-            The all-in-one recipe manager, digital cookbook, and pantry tracker designed to make cooking easier. Save recipes from anywhere, organize your kitchen, and cook smarter every day.
-          </p>
-          <div class="hero__actions">
-            <a href="#download" class="btn btn--primary btn--pill btn--lg">
-              <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              Download on App Store
-            </a>
-            <p class="hero__available">Available on iOS</p>
-          </div>
-        </div>
-        <div class="hero__mockup">
-          <picture>
-            <source srcset="images/HomeView.webp" type="image/webp">
-            <img src="images/HomeView.png" alt="Noosh recipe manager app showing imported recipes like Quick Chicken Tomato Rice and Vegan Chocolate Cake" class="app-screenshot app-screenshot--hero" loading="eager">
-          </picture>
-        </div>
+        <button
+          class="nav__hamburger"
+          id="navHamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- ===== FEATURES OVERVIEW ===== -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="features__header">
-          <div class="features__header-left">
-            <h2 class="section-title section-title--large">ALL YOUR RECIPES,<br><span class="section-title--italic">ONE PLACE</span></h2>
-            <p class="features__header-text">
-              Become a Noosh user and your time in the kitchen will become more enjoyable and organized.
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="hero__bg-accent" aria-hidden="true"></div>
+        <svg
+          class="hero__wave"
+          aria-hidden="true"
+          viewBox="0 0 1440 200"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,160 C320,220 620,80 960,140 C1200,180 1380,100 1440,120 L1440,200 L0,200 Z"
+            fill="var(--color-accent-light)"
+          />
+        </svg>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              <span class="hero__title-line">YOUR KITCHEN,</span>
+              <span class="hero__title-line hero__title-italic"
+                >SIMPLIFIED</span
+              >
+            </h1>
+            <p class="hero__subtitle">
+              The all-in-one recipe manager, digital cookbook, and pantry
+              tracker designed to make cooking easier. Save recipes from
+              anywhere, organize your kitchen, and cook smarter every day.
             </p>
-            <a href="#download" class="btn btn--primary btn--pill">Download App</a>
+            <div class="hero__actions">
+              <a href="#download" class="btn btn--primary btn--pill btn--lg">
+                <svg
+                  class="btn__icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                  />
+                </svg>
+                Download on App Store
+              </a>
+              <p class="hero__available">Available on iOS</p>
+            </div>
           </div>
-          <div class="features__header-right">
-            <h3 class="features__tagline">THE SMARTEST<br>WAY TO<br>COOK</h3>
-            <p class="features__social-proof">
-              Loved by home cooks everywhere
-            </p>
-            <div class="features__avatars" aria-label="Community members">
-              <div class="features__avatar"></div>
-              <div class="features__avatar"></div>
-              <div class="features__avatar"></div>
-              <div class="features__avatar"></div>
-              <span class="features__avatar-count">+1K</span>
+          <div class="hero__mockup">
+            <picture>
+              <source srcset="images/HomeView.webp" type="image/webp" />
+              <img
+                src="images/HomeView.png"
+                alt="Noosh recipe manager app showing imported recipes like Quick Chicken Tomato Rice and Vegan Chocolate Cake"
+                class="app-screenshot app-screenshot--hero"
+                loading="eager"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURES OVERVIEW ===== -->
+      <section class="features" id="features">
+        <div class="container">
+          <div class="features__header">
+            <div class="features__header-left">
+              <h2 class="section-title section-title--large">
+                ALL YOUR RECIPES,<br /><span class="section-title--italic"
+                  >ONE PLACE</span
+                >
+              </h2>
+              <p class="features__header-text">
+                Become a Noosh user and your time in the kitchen will become
+                more enjoyable and organized.
+              </p>
+              <a href="#download" class="btn btn--primary btn--pill"
+                >Download App</a
+              >
+            </div>
+            <div class="features__header-right">
+              <h3 class="features__tagline">
+                THE SMARTEST<br />WAY TO<br />COOK
+              </h3>
+              <p class="features__social-proof">
+                Loved by home cooks everywhere
+              </p>
+              <div class="features__avatars" aria-label="Community members">
+                <div class="features__avatar"></div>
+                <div class="features__avatar"></div>
+                <div class="features__avatar"></div>
+                <div class="features__avatar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features__phone-center">
+            <picture>
+              <source
+                srcset="images/ExploreCategories.webp"
+                type="image/webp"
+              />
+              <img
+                src="images/ExploreCategories.png"
+                alt="Noosh explore screen showing recipe categories like Beef, Chicken, Dessert, Pasta, and Seafood"
+                class="app-screenshot app-screenshot--center"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="features__cards">
+            <div class="feature-card" data-animate>
+              <div class="feature-card__image">
+                <picture
+                  ><source srcset="images/HomeView.webp" type="image/webp" />
+                  <img
+                    src="images/HomeView.png"
+                    alt="Import recipes from anywhere"
+                    class="feature-card__img"
+                    loading="lazy"
+                /></picture>
+              </div>
+              <div class="feature-card__body">
+                <h3 class="feature-card__title">Import Recipes</h3>
+                <p class="feature-card__tag">From anywhere</p>
+                <p class="feature-card__desc">
+                  Save from social media, websites, or the web
+                </p>
+                <a href="#download" class="btn btn--outline btn--sm btn--pill"
+                  >Explore</a
+                >
+              </div>
+            </div>
+            <div class="feature-card" data-animate>
+              <div class="feature-card__image">
+                <picture
+                  ><source
+                    srcset="images/ExploreRecipes.webp"
+                    type="image/webp" />
+                  <img
+                    src="images/ExploreRecipes.png"
+                    alt="Browse recipes by category"
+                    class="feature-card__img"
+                    loading="lazy"
+                /></picture>
+              </div>
+              <div class="feature-card__body">
+                <h3 class="feature-card__title">Personal Cookbook</h3>
+                <p class="feature-card__tag">Always organized</p>
+                <p class="feature-card__desc">
+                  Browse by category, find meals fast
+                </p>
+                <a href="#download" class="btn btn--outline btn--sm btn--pill"
+                  >Explore</a
+                >
+              </div>
+            </div>
+            <div class="feature-card" data-animate>
+              <div class="feature-card__image">
+                <picture
+                  ><source srcset="images/Kitchen.webp" type="image/webp" />
+                  <img
+                    src="images/Kitchen.png"
+                    alt="Track pantry ingredients"
+                    class="feature-card__img"
+                    loading="lazy"
+                /></picture>
+              </div>
+              <div class="feature-card__body">
+                <h3 class="feature-card__title">Pantry Tracker</h3>
+                <p class="feature-card__tag">Reduce waste</p>
+                <p class="feature-card__desc">
+                  Know what you have, shop only what you need
+                </p>
+                <a href="#download" class="btn btn--outline btn--sm btn--pill"
+                  >Explore</a
+                >
+              </div>
+            </div>
+            <div class="feature-card" data-animate>
+              <div class="feature-card__image">
+                <picture
+                  ><source
+                    srcset="images/GenerateRecpe.webp"
+                    type="image/webp" />
+                  <img
+                    src="images/GenerateRecpe.png"
+                    alt="AI recipe generation"
+                    class="feature-card__img"
+                    loading="lazy"
+                /></picture>
+              </div>
+              <div class="feature-card__body">
+                <h3 class="feature-card__title">AI Recipes</h3>
+                <p class="feature-card__tag">Generate meals</p>
+                <p class="feature-card__desc">
+                  Tell Noosh what you have, get a new recipe
+                </p>
+                <a href="#download" class="btn btn--outline btn--sm btn--pill"
+                  >Explore</a
+                >
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="features__phone-center">
-          <picture>
-            <source srcset="images/ExploreCategories.webp" type="image/webp">
-            <img src="images/ExploreCategories.png" alt="Noosh explore screen showing recipe categories like Beef, Chicken, Dessert, Pasta, and Seafood" class="app-screenshot app-screenshot--center" loading="lazy">
-          </picture>
-        </div>
-
-        <div class="features__cards">
-          <div class="feature-card" data-animate>
-            <div class="feature-card__image">
-              <picture><source srcset="images/HomeView.webp" type="image/webp"><img src="images/HomeView.png" alt="Import recipes from anywhere" class="feature-card__img" loading="lazy"></picture>
-            </div>
-            <div class="feature-card__body">
-              <h3 class="feature-card__title">Import Recipes</h3>
-              <p class="feature-card__tag">From anywhere</p>
-              <p class="feature-card__desc">Save from social media, websites, or the web</p>
-              <a href="#download" class="btn btn--outline btn--sm btn--pill">Explore</a>
-            </div>
-          </div>
-          <div class="feature-card" data-animate>
-            <div class="feature-card__image">
-              <picture><source srcset="images/ExploreRecipes.webp" type="image/webp"><img src="images/ExploreRecipes.png" alt="Browse recipes by category" class="feature-card__img" loading="lazy"></picture>
-            </div>
-            <div class="feature-card__body">
-              <h3 class="feature-card__title">Personal Cookbook</h3>
-              <p class="feature-card__tag">Always organized</p>
-              <p class="feature-card__desc">Browse by category, find meals fast</p>
-              <a href="#download" class="btn btn--outline btn--sm btn--pill">Explore</a>
-            </div>
-          </div>
-          <div class="feature-card" data-animate>
-            <div class="feature-card__image">
-              <picture><source srcset="images/Kitchen.webp" type="image/webp"><img src="images/Kitchen.png" alt="Track pantry ingredients" class="feature-card__img" loading="lazy"></picture>
-            </div>
-            <div class="feature-card__body">
-              <h3 class="feature-card__title">Pantry Tracker</h3>
-              <p class="feature-card__tag">Reduce waste</p>
-              <p class="feature-card__desc">Know what you have, shop only what you need</p>
-              <a href="#download" class="btn btn--outline btn--sm btn--pill">Explore</a>
-            </div>
-          </div>
-          <div class="feature-card" data-animate>
-            <div class="feature-card__image">
-              <picture><source srcset="images/GenerateRecpe.webp" type="image/webp"><img src="images/GenerateRecpe.png" alt="AI recipe generation" class="feature-card__img" loading="lazy"></picture>
-            </div>
-            <div class="feature-card__body">
-              <h3 class="feature-card__title">AI Recipes</h3>
-              <p class="feature-card__tag">Generate meals</p>
-              <p class="feature-card__desc">Tell Noosh what you have, get a new recipe</p>
-              <a href="#download" class="btn btn--outline btn--sm btn--pill">Explore</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STATS ===== -->
-    <section class="stats" id="stats">
+      <!-- ===== STATS (hidden — placeholder data) ===== -->
+      <!-- <section class="stats" id="stats">
       <div class="container stats__grid">
         <div class="stat" data-animate>
           <span class="stat__number" data-target="50" data-suffix="K+">0</span>
@@ -215,134 +333,245 @@
           <span class="stat__label">APP STORE<br>RATING</span>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ===== HOW IT WORKS / FEATURE DEEP-DIVES ===== -->
-    <section class="deep-dives" id="how-it-works">
+      <!-- ===== HOW IT WORKS / FEATURE DEEP-DIVES ===== -->
+      <section class="deep-dives" id="how-it-works">
+        <div class="container deep-dive deep-dive--right" data-animate>
+          <div class="deep-dive__content">
+            <h2 class="section-title">
+              AI RECIPE<br /><span class="section-title--italic"
+                >GENERATOR</span
+              >
+            </h2>
+            <p class="deep-dive__subtitle">
+              WE TURN YOUR INGREDIENTS<br />INTO DELICIOUS MEALS
+            </p>
+            <p class="deep-dive__text">
+              Tell Noosh what ingredients you have or what you're craving, and
+              our AI will generate a brand new recipe just for you. No more
+              staring at the fridge wondering what to cook.
+            </p>
+            <a href="#download" class="btn btn--outline btn--pill"
+              >Try It Now</a
+            >
+          </div>
+          <div class="deep-dive__mockups">
+            <picture>
+              <source srcset="images/GenerateRecpe.webp" type="image/webp" />
+              <img
+                src="images/GenerateRecpe.png"
+                alt="Noosh AI recipe generator screen where you describe ingredients and get a custom recipe"
+                class="app-screenshot"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
 
-      <div class="container deep-dive deep-dive--right" data-animate>
-        <div class="deep-dive__content">
-          <h2 class="section-title">AI RECIPE<br><span class="section-title--italic">GENERATOR</span></h2>
-          <p class="deep-dive__subtitle">WE TURN YOUR INGREDIENTS<br>INTO DELICIOUS MEALS</p>
-          <p class="deep-dive__text">Tell Noosh what ingredients you have or what you're craving, and our AI will generate a brand new recipe just for you. No more staring at the fridge wondering what to cook.</p>
-          <a href="#download" class="btn btn--outline btn--pill">Try It Now</a>
+        <div class="container deep-dive deep-dive--left" data-animate>
+          <div class="deep-dive__mockups">
+            <picture>
+              <source srcset="images/Recipe.webp" type="image/webp" />
+              <img
+                src="images/Recipe.png"
+                alt="Noosh recipe detail view showing ingredients with smart shopping list tracking what you already have"
+                class="app-screenshot"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="deep-dive__content">
+            <h2 class="section-title">
+              SMART GROCERY<br /><span class="section-title--italic"
+                >LISTS</span
+              >
+            </h2>
+            <p class="deep-dive__subtitle">SHOP SMARTER,<br />NOT HARDER</p>
+            <p class="deep-dive__text">
+              Turn any recipe into an instant shopping list. Noosh knows what's
+              already in your pantry and only adds what you need. Save time and
+              money every trip to the store.
+            </p>
+            <a href="#download" class="btn btn--outline btn--pill"
+              >Get Started</a
+            >
+          </div>
         </div>
-        <div class="deep-dive__mockups">
-          <picture>
-            <source srcset="images/GenerateRecpe.webp" type="image/webp">
-            <img src="images/GenerateRecpe.png" alt="Noosh AI recipe generator screen where you describe ingredients and get a custom recipe" class="app-screenshot" loading="lazy">
-          </picture>
-        </div>
-      </div>
 
-      <div class="container deep-dive deep-dive--left" data-animate>
-        <div class="deep-dive__mockups">
-          <picture>
-            <source srcset="images/Recipe.webp" type="image/webp">
-            <img src="images/Recipe.png" alt="Noosh recipe detail view showing ingredients with smart shopping list tracking what you already have" class="app-screenshot" loading="lazy">
-          </picture>
+        <div class="container deep-dive deep-dive--right" data-animate>
+          <div class="deep-dive__content">
+            <h2 class="section-title">
+              STEP-BY-STEP<br /><span class="section-title--italic"
+                >COOKING</span
+              >
+            </h2>
+            <p class="deep-dive__subtitle">
+              NEVER LOSE YOUR PLACE<br />IN A RECIPE AGAIN
+            </p>
+            <p class="deep-dive__text">
+              Follow simple step-by-step instructions designed for cooking while
+              your phone sits on the counter. Focus on one step at a time and
+              cook with confidence.
+            </p>
+            <a href="#download" class="btn btn--outline btn--pill"
+              >Learn More</a
+            >
+          </div>
+          <div class="deep-dive__mockups">
+            <picture>
+              <source srcset="images/Steps.webp" type="image/webp" />
+              <img
+                src="images/Steps.png"
+                alt="Noosh step-by-step cooking mode showing clear instructions one step at a time"
+                class="app-screenshot"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
-        <div class="deep-dive__content">
-          <h2 class="section-title">SMART GROCERY<br><span class="section-title--italic">LISTS</span></h2>
-          <p class="deep-dive__subtitle">SHOP SMARTER,<br>NOT HARDER</p>
-          <p class="deep-dive__text">Turn any recipe into an instant shopping list. Noosh knows what's already in your pantry and only adds what you need. Save time and money every trip to the store.</p>
-          <a href="#download" class="btn btn--outline btn--pill">Get Started</a>
-        </div>
-      </div>
 
-      <div class="container deep-dive deep-dive--right" data-animate>
-        <div class="deep-dive__content">
-          <h2 class="section-title">STEP-BY-STEP<br><span class="section-title--italic">COOKING</span></h2>
-          <p class="deep-dive__subtitle">NEVER LOSE YOUR PLACE<br>IN A RECIPE AGAIN</p>
-          <p class="deep-dive__text">Follow simple step-by-step instructions designed for cooking while your phone sits on the counter. Focus on one step at a time and cook with confidence.</p>
-          <a href="#download" class="btn btn--outline btn--pill">Learn More</a>
+        <div class="container deep-dive deep-dive--left" data-animate>
+          <div class="deep-dive__mockups">
+            <picture>
+              <source srcset="images/AddRecipe.webp" type="image/webp" />
+              <img
+                src="images/AddRecipe.png"
+                alt="Noosh add recipe screen with options to import via Camera, URL, AI Generate, or Manual entry"
+                class="app-screenshot"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="deep-dive__content">
+            <h2 class="section-title">
+              ADD WITH<br /><span class="section-title--italic">A PHOTO</span>
+            </h2>
+            <p class="deep-dive__subtitle">SNAP IT,<br />SAVE IT, COOK IT</p>
+            <p class="deep-dive__text">
+              Take a photo of any handwritten recipe, cookbook page, or printed
+              recipe and add it directly to your digital cookbook. Your
+              grandmother's secret recipe, preserved forever.
+            </p>
+            <a href="#download" class="btn btn--outline btn--pill">See How</a>
+          </div>
         </div>
-        <div class="deep-dive__mockups">
-          <picture>
-            <source srcset="images/Steps.webp" type="image/webp">
-            <img src="images/Steps.png" alt="Noosh step-by-step cooking mode showing clear instructions one step at a time" class="app-screenshot" loading="lazy">
-          </picture>
-        </div>
-      </div>
+      </section>
 
-      <div class="container deep-dive deep-dive--left" data-animate>
-        <div class="deep-dive__mockups">
-          <picture>
-            <source srcset="images/AddRecipe.webp" type="image/webp">
-            <img src="images/AddRecipe.png" alt="Noosh add recipe screen with options to import via Camera, URL, AI Generate, or Manual entry" class="app-screenshot" loading="lazy">
-          </picture>
+      <!-- ===== FINAL CTA ===== -->
+      <section class="cta" id="download">
+        <div class="container cta__container">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              Cook Smarter<br />with
+              <span class="cta__title-accent">Noosh</span>
+            </h2>
+            <p class="cta__text">
+              Save recipes. Track your pantry. Cook with confidence.<br />Download
+              Noosh today and transform your kitchen experience.
+            </p>
+            <a href="#" class="btn btn--primary btn--pill btn--lg">
+              <svg
+                class="btn__icon"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                />
+              </svg>
+              Download on App Store
+            </a>
+          </div>
+          <div class="cta__mockups">
+            <picture>
+              <source srcset="images/Kitchen.webp" type="image/webp" />
+              <img
+                src="images/Kitchen.png"
+                alt="Noosh kitchen and pantry tracker showing organized ingredients"
+                class="app-screenshot app-screenshot--cta-side"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source srcset="images/HomeView.webp" type="image/webp" />
+              <img
+                src="images/HomeView.png"
+                alt="Noosh recipe library with saved recipes"
+                class="app-screenshot app-screenshot--cta-front"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source srcset="images/ExploreRecipes.webp" type="image/webp" />
+              <img
+                src="images/ExploreRecipes.png"
+                alt="Noosh discover recipes from around the world"
+                class="app-screenshot app-screenshot--cta-side"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
-        <div class="deep-dive__content">
-          <h2 class="section-title">ADD WITH<br><span class="section-title--italic">A PHOTO</span></h2>
-          <p class="deep-dive__subtitle">SNAP IT,<br>SAVE IT, COOK IT</p>
-          <p class="deep-dive__text">Take a photo of any handwritten recipe, cookbook page, or printed recipe and add it directly to your digital cookbook. Your grandmother's secret recipe, preserved forever.</p>
-          <a href="#download" class="btn btn--outline btn--pill">See How</a>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a
+            href="/"
+            class="nav__logo nav__logo--footer"
+            aria-label="Noosh home"
+          >
+            <img
+              src="images/icon.png"
+              alt=""
+              class="nav__logo-img"
+              width="40"
+              height="40"
+              decoding="async"
+            />
+            <span class="nav__logo-text">noosh</span>
+          </a>
+          <p class="footer__tagline">Cook smarter every day.</p>
         </div>
-      </div>
-
-    </section>
-
-    <!-- ===== FINAL CTA ===== -->
-    <section class="cta" id="download">
-      <div class="container cta__container">
-        <div class="cta__content">
-          <h2 class="cta__title">Cook Smarter<br>with <span class="cta__title-accent">Noosh</span></h2>
-          <p class="cta__text">Save recipes. Track your pantry. Cook with confidence.<br>Download Noosh today and transform your kitchen experience.</p>
-          <a href="#" class="btn btn--primary btn--pill btn--lg">
-            <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            Download on App Store
+        <div class="footer__links">
+          <a href="privacy.html" class="footer__link">Privacy Policy</a>
+          <a href="terms.html" class="footer__link">Terms of Service</a>
+          <a href="support.html" class="footer__link">Support</a>
+          <a href="mailto:hello@noosh.app" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.79a4.83 4.83 0 01-1-.1z"
+              />
+            </svg>
           </a>
         </div>
-        <div class="cta__mockups">
-          <picture>
-            <source srcset="images/Kitchen.webp" type="image/webp">
-            <img src="images/Kitchen.png" alt="Noosh kitchen and pantry tracker showing organized ingredients" class="app-screenshot app-screenshot--cta-side" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/HomeView.webp" type="image/webp">
-            <img src="images/HomeView.png" alt="Noosh recipe library with saved recipes" class="app-screenshot app-screenshot--cta-front" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/ExploreRecipes.webp" type="image/webp">
-            <img src="images/ExploreRecipes.png" alt="Noosh discover recipes from around the world" class="app-screenshot app-screenshot--cta-side" loading="lazy">
-          </picture>
-        </div>
+        <p class="footer__copy">&copy; 2026 Noosh. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__brand">
-        <a href="/" class="nav__logo nav__logo--footer" aria-label="Noosh home">
-          <img src="images/icon.png" alt="" class="nav__logo-img" width="40" height="40" decoding="async">
-          <span class="nav__logo-text">noosh</span>
-        </a>
-        <p class="footer__tagline">Cook smarter every day.</p>
-      </div>
-      <div class="footer__links">
-        <a href="privacy.html" class="footer__link">Privacy Policy</a>
-        <a href="terms.html" class="footer__link">Terms of Service</a>
-        <a href="support.html" class="footer__link">Support</a>
-        <a href="mailto:hello@noosh.app" class="footer__link">Contact</a>
-      </div>
-      <div class="footer__social">
-        <a href="#" class="footer__social-link" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="#" class="footer__social-link" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="#" class="footer__social-link" aria-label="TikTok">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.79a4.83 4.83 0 01-1-.1z"/></svg>
-        </a>
-      </div>
-      <p class="footer__copy">&copy; 2026 Noosh. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
